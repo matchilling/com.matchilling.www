@@ -1,14 +1,14 @@
-head(lang='en')
-block head
-    link(rel='canonical', href=locals.config.baseUrl)
-    link(rel='stylesheet', href='assets/css/main.min.css')
+head
+    block head
+        link(rel='canonical', href=locals.config.baseUrl)
+        link(rel='stylesheet', href='assets/css/main.min.css')
 
-    meta(name='author', content=locals.author.name)
-    meta(charset='utf-8')
-    meta(content='An unopinionated, curated list of the best programming talks out there.', name='description')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='author', content=locals.author.name)
+        meta(charset='utf-8')
+        meta(content='An unopinionated, curated list of the best programming talks out there.', name='description')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
-    script(src='assets/app.js')
-    title Mathias Schilling - Just another paper cut survivor and software engineer
-    
-    include icons.jade
+        script(src='assets/app.js')
+        title Mathias Schilling - Just another paper cut survivor and software engineer
+        
+        include icons.jade
