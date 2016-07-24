@@ -1,7 +1,8 @@
 (function(window, document) {
     'use strict'
 
-    let width,
+    let animateHeader = true,
+        width,
         height,
         animatedHeader,
         canvas,
@@ -10,12 +11,12 @@
         flashStep = 1,
         flashTrigger,
         hahaha = document.createElement('div'),
-        target,
-        animateHeader = true;
+        scream = new Audio('../assets/audio/death.ogg'),
+        target;
 
     document.addEventListener('DOMContentLoaded', function(event) {
-        initHeader();
         initHahaha();
+        initHeader();
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     });
@@ -27,10 +28,11 @@
 
         document.body.appendChild(hahaha);
         document.getElementById('dontTouchThis').addEventListener('click', function() {
+            scream.play();
             hahaha.style.display = 'block';
             setTimeout(function() {
                 hahaha.style.display = 'none';
-            }, 1000);
+            }, 2000);
         });
     }
 

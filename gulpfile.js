@@ -24,6 +24,7 @@ const CNAME = 'www.matchilling.com';
 const DISTRIBUTION = 'dist';
 const PACKAGE = require('./package.json');
 const PATH = {
+    audio: ['./resource/audio/**/*'],
     font: ['./resource/font/web/**/*'],
     img: ['./resource/image/**/*'],
     js: ['./client/**/*.js'],
@@ -53,8 +54,10 @@ gulp.task('deploy-gh-pages', function() {
 gulp.task('default', ['dist', 'watch']);
 
 gulp.task('dist', ['dist-client-js', 'dist-css', 'dist-html'], function() {
-    gulp.src(PATH.img).pipe(gulp.dest(dist('assets/image')));
+    gulp.src(PATH.audio).pipe(gulp.dest(dist('assets/audio')));
     gulp.src(PATH.font).pipe(gulp.dest(dist('assets/font')));
+    gulp.src(PATH.img).pipe(gulp.dest(dist('assets/image')));
+
     fs.writeFile(dist('CNAME'), CNAME, 'utf-8');
 });
 
