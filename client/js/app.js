@@ -7,14 +7,32 @@
         canvas,
         ctx,
         circles,
+        flashStep = 1,
+        flashTrigger,
+        hahaha = document.createElement('div'),
         target,
         animateHeader = true;
 
     document.addEventListener('DOMContentLoaded', function(event) {
         initHeader();
+        initHahaha();
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     });
+
+    function initHahaha() {
+        hahaha.id = 'hahaha';
+        hahaha.style.display = 'none';
+        hahaha.style.height = height + 'px';
+
+        document.body.appendChild(hahaha);
+        document.getElementById('dontTouchThis').addEventListener('click', function() {
+            hahaha.style.display = 'block';
+            setTimeout(function() {
+                hahaha.style.display = 'none';
+            }, 1000);
+        });
+    }
 
     function initHeader() {
         width = window.innerWidth;
