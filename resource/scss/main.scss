@@ -29,7 +29,7 @@ h2 {
     -webkit-margin-after: 0.83em;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    font-weight: bold;
+    font-weight: 600;
 }
 canvas {
     display: inline-block;
@@ -43,8 +43,8 @@ header {
     }
 }
 section {
+    margin: 2em 0;
     &#header {
-        padding: 2em;
         h1 {
             margin: 0;
             font-size: 4.5em;
