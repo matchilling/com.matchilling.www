@@ -98,9 +98,9 @@ gulp.task('dist-html', function() {
                     googleAnalyticsId: 'UA-80325806-1'
                 },
                 author: {
-                    name: 'Mathias Schilling',
-                    email: 'm@matchilling.com',
-                    pgp: pgp
+                    name: PACKAGE.author.name,
+                    email: PACKAGE.author.email,
+                    pgp: pgp.replace('Version: GnuPG v1', 'Version: GnuPG v1\nEmail: ' + PACKAGE.author.email)
                 }
             }
         }))
