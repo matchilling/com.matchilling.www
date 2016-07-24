@@ -24,7 +24,7 @@ const CNAME = 'www.matchilling.com';
 const DISTRIBUTION = 'dist';
 const PACKAGE = require('./package.json');
 const PATH = {
-    font: ['./resource/font/webkit/**/*'],
+    font: ['./resource/font/web/**/*'],
     img: ['./resource/image/**/*'],
     js: ['./client/**/*.js'],
     template: ['./resource/view/**/*.jade'],
