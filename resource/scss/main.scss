@@ -4,7 +4,7 @@ body {
     background: #fff;
     color: #383a3c;
     font-family: 'Raleway', 'Calibri', Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
     line-height: 1.25;
     margin: 0;
@@ -42,6 +42,12 @@ header {
         background-position: center bottom;
     }
 }
+footer {
+    margin: 0 auto 150px;
+    img.emoji {
+        width: 35px;
+    }
+}
 section {
     margin: 2em 0;
     &#header {
@@ -69,9 +75,10 @@ section {
 }
 code {
     &.pgp {
-        max-width: 620px;
+        font-family: monospace;
+        font-size: 1em;
+        font-weight: 200;
         display: inline-block;
-        word-break: break-word;
     }
 }
 #logo {
