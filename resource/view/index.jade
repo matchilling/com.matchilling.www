@@ -14,4 +14,4 @@ block append content
             p
                 | I'm a software engineer and computer science student at the <a href="http://www.dcs.bbk.ac.uk/">Department of Computer Science and Information Systems</a> at <a href="http://www.bbk.ac.uk/">Birkbeck, University of London</a>.
         section#pgp
-            code.pgp=locals.author.pgp
+            code.pgp !{locals.author.pgp.replace(/\n/g, '<br />')}
