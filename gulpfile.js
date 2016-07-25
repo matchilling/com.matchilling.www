@@ -12,6 +12,7 @@ let babelify = require('babelify'),
     jade = require('gulp-jade'),
     minifyHtml = require('gulp-html-minifier'),
     path = require('path'),
+    projects = require('./resource/projects.json'),
     pgp = fs.readFileSync('./node_modules/com-matchilling-pgp-public/mathiasschilling-pub-sub.asc').toString(),
     reload = browserSync.reload,
     rename = require('gulp-rename'),
@@ -104,7 +105,8 @@ gulp.task('dist-html', function() {
                     name: PACKAGE.author.name,
                     email: PACKAGE.author.email,
                     pgp: pgp.replace('Version: GnuPG v1', 'Version: GnuPG v1\nEmail: ' + PACKAGE.author.email)
-                }
+                },
+                projects: projects
             }
         }))
         .pipe(minifyHtml({

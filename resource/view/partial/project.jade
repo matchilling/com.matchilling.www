@@ -1,0 +1,6 @@
+div.card
+    h3.title=project.name
+        if project.url !== null
+            a(href=project.url, title=project.name, target='_blank')
+                | [link]
+    p.description=project.description
