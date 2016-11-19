@@ -8,7 +8,7 @@
         "start": "./node_modules/gulp/bin/gulp.js watch"
     },
     "napa": {
-        "com-matchilling-pgp-public": "matchilling/com-matchilling-pgp-public.git"
+        "matchilling-pgp": "matchilling/pgp.git"
     },
     "repository": {
         "type": "git",
