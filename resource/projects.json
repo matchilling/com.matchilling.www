@@ -1,13 +1,18 @@
 [{
+    "name": "tronalddump.io",
+    "description": "Api & web archive for the dumbest things Donald Trump has ever said.",
+    "status": "live",
+    "url": "https://www.tronalddump.io"
+}, {
     "name": "programmingtalks.org",
     "description": "An unopinionated, curated list of the best programming talks on the Internet.",
     "status": "live",
-    "url": "https://www.programmingtalks.org/"
+    "url": "https://www.programmingtalks.org"
 }, {
     "name": "chucknorris.io",
     "description": "chucknorris.io is a free JSON API for hand curated Chuck Norris facts which also integrates with slack.com.",
     "status": "live",
-    "url": "https://api.chucknorris.io/"
+    "url": "https://api.chucknorris.io"
 }, {
     "name": "tripninjaz.com",
     "description": "tripninjaz.com is a web application that lets users virtually explore different destinations around the world. Depending on the destination, the web application supplies pictures and information on the historical background, significance, popularity, and more.",
