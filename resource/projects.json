@@ -1,26 +1,31 @@
 [{
-    "name": "tronalddump.io",
-    "description": "Api & web archive for the dumbest things Donald Trump has ever said.",
-    "status": "live",
-    "url": "https://www.tronalddump.io"
+  "name": "botlang",
+  "description": "A scripting language for conversational chat bots",
+  "status": "live",
+  "url": "https://botlang.org"
 }, {
-    "name": "programmingtalks.org",
-    "description": "An unopinionated, curated list of the best programming talks on the Internet.",
-    "status": "live",
-    "url": "https://www.programmingtalks.org"
+  "name": "tronalddump.io",
+  "description": "Api & web archive for the dumbest things Donald Trump has ever said.",
+  "status": "live",
+  "url": "https://www.tronalddump.io"
 }, {
-    "name": "chucknorris.io",
-    "description": "chucknorris.io is a free JSON API for hand curated Chuck Norris facts which also integrates with slack.com.",
-    "status": "live",
-    "url": "https://api.chucknorris.io"
+  "name": "programmingtalks.org",
+  "description": "An unopinionated, curated list of the best programming talks on the Internet.",
+  "status": "live",
+  "url": "https://www.programmingtalks.org"
 }, {
-    "name": "tripninjaz.com",
-    "description": "tripninjaz.com is a web application that lets users virtually explore different destinations around the world. Depending on the destination, the web application supplies pictures and information on the historical background, significance, popularity, and more.",
-    "status": "offline",
-    "url": null
+  "name": "chucknorris.io",
+  "description": "chucknorris.io is a free JSON API for hand curated Chuck Norris facts which also integrates with slack.com.",
+  "status": "live",
+  "url": "https://api.chucknorris.io"
 }, {
-    "name": "hotelsheepr.com",
-    "description": "Find & book cheap hotels - Hotelsheepr is a price comparison service for hotels. The applicatione searches all major accommodation websites for their best rates and lets users book rooms with just a few clicks.",
-    "status": "offline",
-    "url": null
+  "name": "tripninjaz.com",
+  "description": "tripninjaz.com is a web application that lets users virtually explore different destinations around the world. Depending on the destination, the web application supplies pictures and information on the historical background, significance, popularity, and more.",
+  "status": "offline",
+  "url": null
+}, {
+  "name": "hotelsheepr.com",
+  "description": "Find & book cheap hotels - Hotelsheepr is a price comparison service for hotels. The applicatione searches all major accommodation websites for their best rates and lets users book rooms with just a few clicks.",
+  "status": "offline",
+  "url": null
 }]
