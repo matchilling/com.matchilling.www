@@ -22,7 +22,7 @@ let babelify = require('babelify'),
     sourcemaps = require('gulp-sourcemaps');
 
 const CNAME = 'www.matchilling.com';
-const DISTRIBUTION = 'dist';
+const DISTRIBUTION = 'docs';
 const PACKAGE = require('./package.json');
 const PATH = {
     audio: ['./resource/audio/**/*'],
