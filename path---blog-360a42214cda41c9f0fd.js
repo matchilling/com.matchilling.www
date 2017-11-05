@@ -1,0 +1,2 @@
+webpackJsonp([49683490770531],{369:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Mathias Schilling - Just another paper cut survivor and software engineer"}},allMarkdownRemark:{edges:[{node:{excerpt:"Far far away, behind the word mountains, far from the countries Vokalia\nand Consonantia, there live the blind texts. Separated they live in…",frontmatter:{path:"/new-beginnings/",date:"04 November, 2017",title:"New Beginnings"}}}]}},pathContext:{_PARENT:"SOURCE"}}}});
+//# sourceMappingURL=path---blog-360a42214cda41c9f0fd.js.map
