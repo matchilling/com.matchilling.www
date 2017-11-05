@@ -1,47 +1,69 @@
 {
-    "name": "com-matchilling",
-    "version": "1.0.0",
-    "scripts": {
-        "build": "./node_modules/gulp/bin/gulp.js dist",
-        "deploy:gh": "./node_modules/gulp/bin/gulp.js dist deploy-gh-pages",
-        "install": "./node_modules/napa/bin/napa",
-        "start": "./node_modules/gulp/bin/gulp.js watch"
-    },
-    "napa": {
-        "matchilling-pgp": "matchilling/pgp.git"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/matchilling/com-matchilling.git"
-    },
-    "author": {
-        "name": "Mathias Schilling",
-        "email": "m@matchilling.com",
-        "url": "https://www.matchilling.com"
-    },
-    "license": "GPL-3.0",
-    "bugs": {
-        "url": "https://github.com/matchilling/com-matchilling/issues"
-    },
-    "homepage": "https://www.matchilling.org/",
-    "devDependencies": {
-        "babel": "^6.5",
-        "babelify": "^7.3",
-        "browser-sync": "^2.13",
-        "browserify": "^13.0",
-        "gh-pages": "^0.11",
-        "gulp": "^3.9",
-        "gulp-clean-css": "^2.0",
-        "gulp-concat": "^2.6",
-        "gulp-concat-json": "^1.0",
-        "gulp-gh-pages": "^0.5",
-        "gulp-html-minifier": "^0.1",
-        "gulp-jade": "^1.1",
-        "gulp-rename": "^1.2",
-        "gulp-sass": "^2.3",
-        "gulp-sourcemaps": "^1.6",
-        "napa": "^2.3",
-        "run-sequence": "^1.2",
-        "vinyl-source-stream": "^1.1"
-    }
+  "name": "com.matchilling.www",
+  "description": "My personal website",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mathias Schilling",
+    "email": "m@matchilling.com",
+    "url": "https://www.matchilling.com"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/matchilling/com.matchilling.www/issues"
+  },
+  "homepage": "https://www.matchilling.com/",
+  "dependencies": {
+    "gatsby": "^1.9.100",
+    "gatsby-link": "^1.6.24",
+    "gatsby-plugin-catch-links": "^1.0.9",
+    "gatsby-plugin-google-analytics": "^1.0.11",
+    "gatsby-plugin-offline": "^1.0.10",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sass": "^1.0.12",
+    "gatsby-plugin-sharp": "^1.6.17",
+    "gatsby-plugin-typography": "^1.7.10",
+    "gatsby-remark-copy-linked-files": "^1.5.16",
+    "gatsby-remark-images": "^1.5.28",
+    "gatsby-remark-prismjs": "^1.2.9",
+    "gatsby-remark-responsive-iframe": "^1.4.8",
+    "gatsby-remark-smartypants": "^1.4.8",
+    "gatsby-source-filesystem": "^1.5.6",
+    "gatsby-transformer-remark": "^1.7.19",
+    "lodash": "^4.17.4",
+    "react-responsive-grid": "^0.3.3",
+    "typeface-merriweather": "^0.0.35",
+    "typeface-montserrat": "^0.0.37",
+    "typography-theme-wordpress-2016": "^0.15.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-plugin-react": "^7.4.0",
+    "gh-pages": "^0.12.0",
+    "prettier": "^1.7.4"
+  },
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matchilling/com.matchilling.www.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "dev": "gatsby develop",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma all --no-semi --single-quote --write 'src/**/*.js'",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "postinstall": "./bin/postinstall",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015",
+      "stage-1"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  }
 }

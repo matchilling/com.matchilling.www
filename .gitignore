@@ -1,4 +1,8 @@
-.env
-node_modules/
-.publish/
-.tmp
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+# Build directory
+.cache/
+public/
+.gatsby-context.js

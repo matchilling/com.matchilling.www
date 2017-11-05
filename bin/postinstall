@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+readonly SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+readonly PROJECT_DIR=$(cd "${SCRIPT_DIR}/.." && pwd)
+
+# Check if curl is installed
+command -v curl --version >/dev/null 2>&1 || {
+  echo >&2 "Please install curl (e.g. https://curl.haxx.se/download.html) before continuing."
+  exit 1
+}
+
+# Check if curl is installed
+command -v sed --version >/dev/null 2>&1 || {
+  echo >&2 "Please install sed (e.g. https://www.gnu.org/software/sed/) before continuing."
+  exit 1
+}
+
+curl --silent 'https://raw.githubusercontent.com/matchilling/pgp/master/keys.json' > "$PROJECT_DIR/data/pgp_keys.json"
