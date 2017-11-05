@@ -23,6 +23,7 @@
     "gatsby-plugin-sharp": "^1.6.17",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-copy-linked-files": "^1.5.16",
+    "gatsby-remark-emojis": "git+ssh://git@github.com/matchilling/gatsby-remark-emojis.git",
     "gatsby-remark-images": "^1.5.28",
     "gatsby-remark-prismjs": "^1.2.9",
     "gatsby-remark-responsive-iframe": "^1.4.8",
