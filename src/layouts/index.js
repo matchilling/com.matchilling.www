@@ -9,6 +9,8 @@ import { rhythm, scale } from './../utils/typography'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
+import 'prismjs/themes/prism-tomorrow.css'
+
 export default class Template extends React.Component {
   render() {
     const { location, children } = this.props,
