@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Mathias Schilling - Just another paper cut survivor and software engineer",
     author: "Mathias Schilling",
+    siteUrl: `https://www.matchilling.com`,
   },
   plugins: [
     'gatsby-plugin-catch-links',
@@ -95,6 +96,9 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-plugin-sitemap',
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
