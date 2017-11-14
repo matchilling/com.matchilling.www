@@ -1,0 +1,2 @@
+webpackJsonp([49683490770531],{370:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Mathias Schilling - Just another paper cut survivor and software engineer"}},allMarkdownRemark:{edges:[{node:{excerpt:"Tada  , I finally found the time to migrate my personal website to a bit more modern and feature-richer engine. The current version uses…",frontmatter:{path:"/new-beginnings/",date:"13 November, 2017",title:"New Beginnings"}}}]}},pathContext:{_PARENT:"SOURCE"}}}});
+//# sourceMappingURL=path---blog-3a4d2c1be36a0e7401c8.js.map
