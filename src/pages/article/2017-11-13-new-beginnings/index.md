@@ -1,7 +1,8 @@
 ---
-title : New Beginnings
-date  : "2017-11-13T23:41:35.270Z"
-path  : "/new-beginnings/"
+date  : '2017-11-13T23:41:35.270Z'
+title : 'New Beginnings'
+path  : '/new-beginnings/'
+tags  : ''
 ---
 
 Tada :tada:, I finally found the time to migrate my personal website to a bit more modern and feature-richer engine. The current version uses [GatsbyJs](https://www.gatsbyjs.org), a react/ GraphQL based static progressive site generator built by Kyle Mathews which aims build to fast websites out-of-the-box using regular [Jam stack](https://jamstack.org/).

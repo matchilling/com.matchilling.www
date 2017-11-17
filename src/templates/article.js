@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 
 import Bio from '../components/biography/'
 import { rhythm, scale } from '../utils/typography'
@@ -12,13 +13,20 @@ export default class ArticleTemplate extends React.Component {
     return (
       <article>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
+        <h1>
+          <Link
+            style={{ color: 'hsla(0,0%,0%,0.9)', boxShadow: 'none' }}
+            to={post.frontmatter.path}
+          >
+            {post.frontmatter.title}
+          </Link>
+        </h1>
         <p
           style={{
             ...scale(-1 / 5),
             display: 'block',
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(-0.5),
           }}
         >
           {post.frontmatter.date}
@@ -43,8 +51,10 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        date(formatString: "DD MMMM, YYYY")
+        path
+        tags
         title
-        date(formatString: "MMMM DD, YYYY")
       }
     }
   }

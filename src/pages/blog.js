@@ -54,10 +54,9 @@ export const pageQuery = graphql`
         node {
           excerpt
           frontmatter {
-            path
             date(formatString: "DD MMMM, YYYY")
-          }
-          frontmatter {
+            path
+            tags
             title
           }
         }
