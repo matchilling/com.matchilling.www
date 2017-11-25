@@ -6,16 +6,18 @@ import Bio from '../components/biography/'
 import { rhythm, scale } from '../utils/typography'
 
 export default class ArticleTemplate extends React.Component {
-
   render() {
     const post = this.props.data.markdownRemark
     const readTime = (words, options) => {
-      const defaults = Object.assign({
-              wordsPerMinute : 225
-            }, options),
-            minutes = words / defaults.wordsPerMinute;
+      const defaults = Object.assign(
+          {
+            wordsPerMinute: 225,
+          },
+          options,
+        ),
+        minutes = words / defaults.wordsPerMinute
 
-      return `${Math.ceil(minutes.toFixed(2))} min read`;
+      return `${Math.ceil(minutes.toFixed(2))} min read`
     }
     const siteTitle = this.props.data.site.siteMetadata.title
 
