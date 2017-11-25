@@ -8,6 +8,27 @@ theme.overrideThemeStyles = () => ({
   'a.gatsby-resp-image-link': {
     boxShadow: 'none',
   },
+  li : {
+    'marginBottom': 'calc(1rem / 2)'
+  },
+  p : {
+    'marginBottom': '1.15rem'
+  },
+  '.gatsby-highlight' : {
+    margin: '.8em -1em'
+  },
+  '.gatsby-resp-image-wrapper' : {
+    margin: '1.6rem -1rem 2.6rem -1rem',
+    '-webkit-filter': 'grayscale(1)',
+    '-webkit-filter': 'grayscale(100%)',
+    filter: 'gray',
+    filter: 'grayscale(100%)',
+    filter: 'url(/desaturate.svg#greyscale)'
+  },
+  '.gatsby-resp-image-wrapper:hover' : {
+    '-webkit-filter': 'none',
+    filter: 'none'
+  }
 })
 
 const typography = new Typography(theme)
