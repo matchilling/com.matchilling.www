@@ -6,8 +6,17 @@ import Bio from '../components/biography/'
 import { rhythm, scale } from '../utils/typography'
 
 export default class ArticleTemplate extends React.Component {
+
   render() {
     const post = this.props.data.markdownRemark
+    const readTime = (words, options) => {
+      const defaults = Object.assign({
+              wordsPerMinute : 225
+            }, options),
+            minutes = words / defaults.wordsPerMinute;
+
+      return `${Math.ceil(minutes.toFixed(2))} min read`;
+    }
     const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
@@ -29,7 +38,7 @@ export default class ArticleTemplate extends React.Component {
             marginTop: rhythm(-0.5),
           }}
         >
-          {post.frontmatter.date}
+          {post.frontmatter.date}, {readTime(post.wordCount.words)}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr style={{ marginBottom: rhythm(1) }} />
@@ -55,6 +64,9 @@ export const pageQuery = graphql`
         path
         tags
         title
+      }
+      wordCount {
+        words
       }
     }
   }
