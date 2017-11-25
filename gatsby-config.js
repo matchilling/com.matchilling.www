@@ -79,7 +79,7 @@ module.exports = {
               active : true,
               // Add a custom css class
               class  : 'emoji-icon',
-              size   : 16,
+              size   : 64,
               // Add custom styles
               styles : {
                 display : 'inline',
