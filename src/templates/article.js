@@ -19,11 +19,10 @@ export default class ArticleTemplate extends React.Component {
 
       return `${Math.ceil(minutes.toFixed(2))} min read`
     }
-    const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
       <article>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+        <Helmet title={`${post.frontmatter.title}`} />
         <h1>
           <Link
             style={{ color: 'hsla(0,0%,0%,0.9)', boxShadow: 'none' }}
