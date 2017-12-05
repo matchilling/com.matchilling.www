@@ -40,6 +40,12 @@ export default class ArticleTemplate extends React.Component {
           }}
         >
           {post.frontmatter.date}, {readTime(post.wordCount.words)}
+          {post.frontmatter.hn_id && (
+            <span>
+              <span>, </span>
+              <a target="_blank" rel="nofollow" href={`https://news.ycombinator.com/item?id=${post.frontmatter.hn_id}`}>comments on hackernews</a>
+            </span>
+          )}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr style={{ marginBottom: rhythm(1) }} />
@@ -62,6 +68,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "DD MMMM, YYYY")
+        hn_id
         path
         tags
         title
