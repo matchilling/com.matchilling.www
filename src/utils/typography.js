@@ -29,6 +29,12 @@ theme.overrideThemeStyles = () => ({
     '-webkit-filter': 'none',
     filter: 'none',
   },
+  '.footnotes ol p': {
+    display: 'inline'
+  },
+  '.footnotes ol .footnote-backref': {
+    display: 'inline'
+  }
 })
 
 const typography = new Typography(theme)
