@@ -33,12 +33,12 @@
       "component---src-layouts-index-js-7aba2aea02e11131682e.js.map"
     ],
     "path---introduction-to-logic-programming-with-prolog": [
-      "path---introduction-to-logic-programming-with-prolog-c0fa30d47eb219ef3187.js",
-      "path---introduction-to-logic-programming-with-prolog-c0fa30d47eb219ef3187.js.map"
+      "path---introduction-to-logic-programming-with-prolog-d41857325374281e2214.js",
+      "path---introduction-to-logic-programming-with-prolog-d41857325374281e2214.js.map"
     ],
     "component---src-templates-article-js": [
-      "component---src-templates-article-js-e97247571fba34044181.js",
-      "component---src-templates-article-js-e97247571fba34044181.js.map"
+      "component---src-templates-article-js-7a37d9aa7d04f24aca01.js",
+      "component---src-templates-article-js-7a37d9aa7d04f24aca01.js.map"
     ],
     "path---index": [
       "path---index-1db04e5021b40904aca6.js",
@@ -61,14 +61,14 @@
       "component---src-pages-blog-js-5d9a5447772b9a8feeb5.js.map"
     ],
     "app": [
-      "app-0ed29a250a14912d1086.js",
+      "app-6a6776ef1b33b7e81b3b.js",
       "build-js-styles.css",
-      "app-0ed29a250a14912d1086.js.map",
+      "app-6a6776ef1b33b7e81b3b.js.map",
       "build-js-styles.css.map"
     ],
     "path---new-beginnings": [
-      "path---new-beginnings-ae9a60771b16f5197fb9.js",
-      "path---new-beginnings-ae9a60771b16f5197fb9.js.map"
+      "path---new-beginnings-23574d1c374f97bbacba.js",
+      "path---new-beginnings-23574d1c374f97bbacba.js.map"
     ]
   }
 }
