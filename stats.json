@@ -5,8 +5,8 @@
       "component---src-pages-index-js-f43ccf336d5fb008f152.js.map"
     ],
     "path---blog": [
-      "path---blog-5a71376b49e1b62052dc.js",
-      "path---blog-5a71376b49e1b62052dc.js.map"
+      "path---blog-314ab3f4591e25c10e5c.js",
+      "path---blog-314ab3f4591e25c10e5c.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -17,8 +17,8 @@
       "component---src-pages-contact-js-f7d7c8f24ba630b067a6.js.map"
     ],
     "path---project": [
-      "path---project-1db04e5021b40904aca6.js",
-      "path---project-1db04e5021b40904aca6.js.map"
+      "path---project-a0e39f21c11f6a62c5ab.js",
+      "path---project-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -33,42 +33,42 @@
       "component---src-layouts-index-js-7aba2aea02e11131682e.js.map"
     ],
     "path---introduction-to-logic-programming-with-prolog": [
-      "path---introduction-to-logic-programming-with-prolog-d41857325374281e2214.js",
-      "path---introduction-to-logic-programming-with-prolog-d41857325374281e2214.js.map"
+      "path---introduction-to-logic-programming-with-prolog-65c582eb437f76dfb730.js",
+      "path---introduction-to-logic-programming-with-prolog-65c582eb437f76dfb730.js.map"
     ],
     "component---src-templates-article-js": [
       "component---src-templates-article-js-7a37d9aa7d04f24aca01.js",
       "component---src-templates-article-js-7a37d9aa7d04f24aca01.js.map"
     ],
     "path---index": [
-      "path---index-1db04e5021b40904aca6.js",
-      "path---index-1db04e5021b40904aca6.js.map"
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-32dd438eb138a0e254d1.js",
-      "commons-32dd438eb138a0e254d1.js.map"
+      "commons-9355a27d6485bd3f9dfc.js",
+      "commons-9355a27d6485bd3f9dfc.js.map"
     ],
     "path---contact": [
-      "path---contact-1db04e5021b40904aca6.js",
-      "path---contact-1db04e5021b40904aca6.js.map"
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
-      "path---offline-plugin-app-shell-fallback-1db04e5021b40904aca6.js",
-      "path---offline-plugin-app-shell-fallback-1db04e5021b40904aca6.js.map"
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-blog-js": [
       "component---src-pages-blog-js-5d9a5447772b9a8feeb5.js",
       "component---src-pages-blog-js-5d9a5447772b9a8feeb5.js.map"
     ],
     "app": [
-      "app-6a6776ef1b33b7e81b3b.js",
+      "app-7ca8d01f1d86df504ada.js",
       "build-js-styles.css",
-      "app-6a6776ef1b33b7e81b3b.js.map",
+      "app-7ca8d01f1d86df504ada.js.map",
       "build-js-styles.css.map"
     ],
     "path---new-beginnings": [
-      "path---new-beginnings-23574d1c374f97bbacba.js",
-      "path---new-beginnings-23574d1c374f97bbacba.js.map"
+      "path---new-beginnings-f65cdcddaba53d253b88.js",
+      "path---new-beginnings-f65cdcddaba53d253b88.js.map"
     ]
   }
 }
