@@ -5,8 +5,8 @@
       "component---src-pages-index-js-f43ccf336d5fb008f152.js.map"
     ],
     "path---blog": [
-      "path---blog-314ab3f4591e25c10e5c.js",
-      "path---blog-314ab3f4591e25c10e5c.js.map"
+      "path---blog-1e758c14028df9c24359.js",
+      "path---blog-1e758c14028df9c24359.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -15,6 +15,10 @@
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-f7d7c8f24ba630b067a6.js",
       "component---src-pages-contact-js-f7d7c8f24ba630b067a6.js.map"
+    ],
+    "path---brexit-call-for-collaboration": [
+      "path---brexit-call-for-collaboration-fdce1b051502f9f2aa5d.js",
+      "path---brexit-call-for-collaboration-fdce1b051502f9f2aa5d.js.map"
     ],
     "path---project": [
       "path---project-a0e39f21c11f6a62c5ab.js",
@@ -61,14 +65,14 @@
       "component---src-pages-blog-js-5d9a5447772b9a8feeb5.js.map"
     ],
     "app": [
-      "app-7ca8d01f1d86df504ada.js",
+      "app-179adfec3702f0f567ca.js",
       "build-js-styles.css",
-      "app-7ca8d01f1d86df504ada.js.map",
+      "app-179adfec3702f0f567ca.js.map",
       "build-js-styles.css.map"
     ],
     "path---new-beginnings": [
-      "path---new-beginnings-f65cdcddaba53d253b88.js",
-      "path---new-beginnings-f65cdcddaba53d253b88.js.map"
+      "path---new-beginnings-e1df55b71366f133326e.js",
+      "path---new-beginnings-e1df55b71366f133326e.js.map"
     ]
   }
 }
