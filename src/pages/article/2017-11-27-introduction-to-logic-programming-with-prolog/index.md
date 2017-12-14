@@ -309,7 +309,7 @@ The complete "Four Colour Theorem" code example is also available on my [github 
 
 ## What Next?
 
-If you find it as mind-blowing as I do with how few lines you can write reasonable programs why don't you try to solve one of those classic puzzles like for example the "[Tower of Hanoi](https://www.cpp.edu/~jrfisher/www/prolog_tutorial/2_3.html)" or the "[Escape from Zurg](http://web.engr.oregonstate.edu/~erwig/papers/Zurg_JFP04.pdf)" on your own? Alternatively, try to solve one of the [99 Prolog problems](https://sites.google.com/site/prologsite/prolog-problems) as your daily Kata.
+If you find it as mind-blowing as I do with how few lines you can write reasonable programs why don't you try to solve one of those classic puzzles like for example the "[Tower of Hanoi](https://www.cpp.edu/~jrfisher/www/prolog_tutorial/2_3.html)" or the "[Escape from Zurg](http://web.engr.oregonstate.edu/~erwig/papers/Zurg_JFP04.pdf)" on your own? Try to solve one of the [99 Prolog problems](https://sites.google.com/site/prologsite/prolog-problems) as your daily Kata or become part of the collaborative text adventure project [BREXIT - A !serious adventure for the Ununited Kingdom](/brexit-call-for-collaboration/).
 
 ## Further resources
 
