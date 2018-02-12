@@ -5,8 +5,8 @@
       "component---src-pages-index-js-f43ccf336d5fb008f152.js.map"
     ],
     "path---blog": [
-      "path---blog-b6ee9ddc733b8e040a6c.js",
-      "path---blog-b6ee9ddc733b8e040a6c.js.map"
+      "path---blog-77e4483ff9425ecad6d0.js",
+      "path---blog-77e4483ff9425ecad6d0.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -17,8 +17,8 @@
       "component---src-pages-contact-js-f7d7c8f24ba630b067a6.js.map"
     ],
     "path---brexit-call-for-collaboration": [
-      "path---brexit-call-for-collaboration-b6245407a0a7a6aee875.js",
-      "path---brexit-call-for-collaboration-b6245407a0a7a6aee875.js.map"
+      "path---brexit-call-for-collaboration-afc980813798c0f79523.js",
+      "path---brexit-call-for-collaboration-afc980813798c0f79523.js.map"
     ],
     "path---project": [
       "path---project-a0e39f21c11f6a62c5ab.js",
@@ -33,16 +33,16 @@
       "component---src-pages-project-js-8664cab9b2f05918b78b.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-7aba2aea02e11131682e.js",
-      "component---src-layouts-index-js-7aba2aea02e11131682e.js.map"
+      "component---src-layouts-index-js-4738f5945376db2d4bb9.js",
+      "component---src-layouts-index-js-4738f5945376db2d4bb9.js.map"
     ],
     "path---introduction-to-logic-programming-with-prolog": [
-      "path---introduction-to-logic-programming-with-prolog-ed8430fd6ba2c6e1cf38.js",
-      "path---introduction-to-logic-programming-with-prolog-ed8430fd6ba2c6e1cf38.js.map"
+      "path---introduction-to-logic-programming-with-prolog-e6062bdaff77eedfa272.js",
+      "path---introduction-to-logic-programming-with-prolog-e6062bdaff77eedfa272.js.map"
     ],
     "path---storing-security-sensitive-data-using-aws-kms-and-openssl": [
-      "path---storing-security-sensitive-data-using-aws-kms-and-openssl-3b9fc01222637c57fdab.js",
-      "path---storing-security-sensitive-data-using-aws-kms-and-openssl-3b9fc01222637c57fdab.js.map"
+      "path---storing-security-sensitive-data-using-aws-kms-and-openssl-3789213b33e5ae11bae2.js",
+      "path---storing-security-sensitive-data-using-aws-kms-and-openssl-3789213b33e5ae11bae2.js.map"
     ],
     "component---src-templates-article-js": [
       "component---src-templates-article-js-7a37d9aa7d04f24aca01.js",
@@ -53,12 +53,16 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-654f5bca0dcd4a643231.js",
-      "commons-654f5bca0dcd4a643231.js.map"
+      "commons-fcfe6aa48082cdfc1d22.js",
+      "commons-fcfe6aa48082cdfc1d22.js.map"
     ],
     "path---contact": [
       "path---contact-a0e39f21c11f6a62c5ab.js",
       "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---comparison-of-machine-learning-methods-in-email-spam-detection": [
+      "path---comparison-of-machine-learning-methods-in-email-spam-detection-38aafcdfe03c63289863.js",
+      "path---comparison-of-machine-learning-methods-in-email-spam-detection-38aafcdfe03c63289863.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
@@ -69,14 +73,14 @@
       "component---src-pages-blog-js-5d9a5447772b9a8feeb5.js.map"
     ],
     "app": [
-      "app-41b10cf0a1c8497d627d.js",
+      "app-2d6273d946ad6701683c.js",
       "build-js-styles.css",
-      "app-41b10cf0a1c8497d627d.js.map",
+      "app-2d6273d946ad6701683c.js.map",
       "build-js-styles.css.map"
     ],
     "path---new-beginnings": [
-      "path---new-beginnings-f65cdcddaba53d253b88.js",
-      "path---new-beginnings-f65cdcddaba53d253b88.js.map"
+      "path---new-beginnings-6fae1144ccba9262e5c7.js",
+      "path---new-beginnings-6fae1144ccba9262e5c7.js.map"
     ]
   }
 }
