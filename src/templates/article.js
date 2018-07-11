@@ -43,7 +43,15 @@ export default class ArticleTemplate extends React.Component {
           {post.frontmatter.hn_id && (
             <span>
               <span>, </span>
-              <a target="_blank" rel="nofollow" href={`https://news.ycombinator.com/item?id=${post.frontmatter.hn_id}`}>comments on hackernews</a>
+              <a
+                target="_blank"
+                rel="nofollow"
+                href={`https://news.ycombinator.com/item?id=${
+                  post.frontmatter.hn_id
+                }`}
+              >
+                comments on hackernews
+              </a>
             </span>
           )}
         </p>

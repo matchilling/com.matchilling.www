@@ -18,11 +18,11 @@ theme.overrideThemeStyles = () => ({
     margin: '.8em -1em',
   },
   '.footnotes ol p': {
-    display: 'inline'
+    display: 'inline',
   },
   '.footnotes ol .footnote-backref': {
-    display: 'inline'
-  }
+    display: 'inline',
+  },
 })
 
 const typography = new Typography(theme)
