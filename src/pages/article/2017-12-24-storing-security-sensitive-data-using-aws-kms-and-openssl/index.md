@@ -122,7 +122,7 @@ Note that the `Plaintext` and `CiphertextBlob` properties in the returned JSON a
 ```
 ### 4. Storing the CipherTextBlob
 
-Next, we are going to extract the `CipherTextBlob` from the `data_key.json` , base64 decode and store it in our repository. The OpenSSL toolkit provides a base64 implementation rather than which we will use for the decoding.
+Next, we are going to extract the `CipherTextBlob` from the `data_key.json` , base64 decode and store it in our repository. The OpenSSL toolkit provides a base64 implementation which we will use for the decoding.
 
 **The blob contains meta-data about which CMK was used during data key creation. It will allow us to retrieve the plaintext key later on decryption.**
 
