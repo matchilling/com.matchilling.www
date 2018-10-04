@@ -20,7 +20,9 @@ export default class ProjectList extends React.Component {
               <h3 style={{ marginBottom: rhythm(0.5) }}>
                 {project.name} {link}
               </h3>
-              <p>{project.description}</p>
+              {project.description.split('\n').map((paragraph, key) => (
+                <p key={key}>{paragraph}</p>
+              ))}
             </div>
           )
         })}

@@ -1,5 +1,4 @@
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import React from 'react'
 
 import ProjectList from '../components/project-list/'

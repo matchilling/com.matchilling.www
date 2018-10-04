@@ -1,31 +1,68 @@
-[{
-  "name": "botlang",
-  "description": "A scripting language for conversational chat bots",
-  "status": "live",
-  "url": "https://botlang.org"
-}, {
-  "name": "tronalddump.io",
-  "description": "Api & web archive for the dumbest things Donald Trump has ever said.",
-  "status": "live",
-  "url": "https://www.tronalddump.io"
-}, {
-  "name": "programmingtalks.org",
-  "description": "An unopinionated, curated list of the best programming talks on the Internet.",
-  "status": "live",
-  "url": "https://www.programmingtalks.org"
-}, {
-  "name": "chucknorris.io",
-  "description": "chucknorris.io is a free JSON API for hand curated Chuck Norris facts which also integrates with slack.com.",
-  "status": "live",
-  "url": "https://api.chucknorris.io"
-}, {
-  "name": "tripninjaz.com",
-  "description": "tripninjaz.com is a web application that lets users virtually explore different destinations around the world. Depending on the destination, the web application supplies pictures and information on the historical background, significance, popularity, and more.",
-  "status": "offline",
-  "url": null
-}, {
-  "name": "hotelsheepr.com",
-  "description": "Find & book cheap hotels - Hotelsheepr is a price comparison service for hotels. The applicatione searches all major accommodation websites for their best rates and lets users book rooms with just a few clicks.",
-  "status": "offline",
-  "url": null
-}]
+[
+  {
+    "name": "Klarna",
+    "description": "Klarna was founded in 2005 in Stockholm, Sweden with the aim of making it easier for people to shop online. In the last 12 years, technology has evolved, excited and transformed the world around us, yet our mission remains as relevant as ever, to make paying as simple, safe and above all, smooth as possible.\nKlarna is now one of Europe’s largest banks and is providing payment solutions for 60 million consumers across 89,000 merchants in 14 countries. Klarna offers direct payments, pay after delivery options and installment plans in a smooth one-click purchase experience that lets consumers pay when and how they prefer to.",
+    "url": "https://www.klarna.com"
+  },
+  {
+    "name": "pulitzer.io",
+    "description": "The first open API for fake news detection powered by deep learning.",
+    "url": "https://pulitzer.io"
+  },
+  {
+    "name": "Ovum Forecaster",
+    "description": "Better strategic decision-making with a complete view of the converging TMT market.\nForecaster provides a single point of access to the most reliable in-depth market forecast data, including comprehensive market data at the global, regional, and country level, as well as views by technology, company, and other critical metrics.",
+    "url": "https://www.youtube.com/watch?v=7SS-aqPnjqc"
+  },
+  {
+    "name": "botlang",
+    "description": "A scripting language for conversational chat bots\nThe purpose of the botlang project is to design a simple, non-complex and user friendly comprehensive scripting language to enable non technical personnel in an organization to be able to implement and maintain chatbots, smart FAQ systems etc. Companies using the language benefit from rapid application time and therefore have the ability to reduce potential development costs for such system compared to a traditional approach.",
+    "status": "live",
+    "url": "https://botlang.org"
+  },
+  {
+    "name": "Riseproject",
+    "description": "Rise Project identifies, develops and markets online customer acquisiton portals. We couple proprietary technology tools with highly skilled campaign managers to generate high value traffic for our customers.",
+    "url": "https://www.riseproject.com"
+  },
+  {
+    "name": "tronalddump.io",
+    "description": "Api & web archive for the dumbest things Donald Trump has ever said.",
+    "status": "live",
+    "url": "https://www.tronalddump.io"
+  },
+  {
+    "name": "Pocket High Street",
+    "description": "Click & collect and 1 hour delivery for London's independent local retailers.",
+    "url": "https://www.pockethighstreet.com"
+  },
+  {
+    "name": "SaveTheHighStreet",
+    "description": "SaveTheHighStreet.org is powered by independent shopkeepers on a Retailer Advisory Board, industry partners across public and private sector and local high street champions nationwide.",
+    "url": "https://www.savethehighstreet.org"
+  },
+  {
+    "name": "programmingtalks.org",
+    "description": "An unopinionated, curated list of the best programming talks on the Internet.",
+    "status": "live",
+    "url": "https://www.programmingtalks.org"
+  },
+  {
+    "name": "chucknorris.io",
+    "description": "chucknorris.io is a free JSON API for hand curated Chuck Norris facts which also integrates with slack.com.",
+    "status": "live",
+    "url": "https://api.chucknorris.io"
+  },
+  {
+    "name": "tripninjaz.com",
+    "description": "tripninjaz.com is a web application that lets users virtually explore different destinations around the world. Depending on the destination, the web application supplies pictures and information on the historical background, significance, popularity, and more.",
+    "status": "offline",
+    "url": null
+  },
+  {
+    "name": "hotelsheepr.com",
+    "description": "Find & book cheap hotels - Hotelsheepr is a price comparison service for hotels. The applicatione searches all major accommodation websites for their best rates and lets users book rooms with just a few clicks.",
+    "status": "offline",
+    "url": null
+  }
+]

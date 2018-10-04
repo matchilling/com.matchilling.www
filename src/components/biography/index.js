@@ -23,17 +23,20 @@ export default class Biography extends React.Component {
           and programming. The other 1% I’m usually asleep. You can find me{' '}
           <a href={profile.contact.twitter} target="_blank">
             here
-          </a>,{' '}
+          </a>
+          ,{' '}
           <a href={profile.contact.linkedin} target="_blank">
             here
-          </a>,{' '}
+          </a>
+          ,{' '}
           <a href={profile.contact.github} target="_blank">
             here
           </a>{' '}
           and{' '}
           <a href={profile.contact.lastfm} target="_blank">
             there
-          </a>.
+          </a>
+          .
         </p>
       </div>
     )
