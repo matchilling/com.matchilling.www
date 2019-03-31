@@ -1,5 +1,10 @@
 [
   {
+    "name": "NewStore",
+    "description": "NewStore transforms brick and mortar shopping into app-powered, digitally connected retail experiences. Purpose built for the most demanding consumers, NewStore is the first to provide Omnichannel-as-a Service, integrating a cloud-based order management system and Mobile POS. With intuitive apps on the front-end for store employees and pre-built ecommerce connectors, retailers can easily offer Endless Aisle, Mobile Checkout, Omni Fulfillment, and Clienteling. NewStore was founded by Stephan Schambach, who revolutionized ecommerce by putting it in the cloud with Demandware (now Salesforce Commerce Cloud). The company is located in Boston, New York, and Berlin.",
+    "url": "https://www.newstore.com"
+  },
+  {
     "name": "Klarna",
     "description": "Klarna was founded in 2005 in Stockholm, Sweden with the aim of making it easier for people to shop online. In the last 12 years, technology has evolved, excited and transformed the world around us, yet our mission remains as relevant as ever, to make paying as simple, safe and above all, smooth as possible.\nKlarna is now one of Europe’s largest banks and is providing payment solutions for 60 million consumers across 89,000 merchants in 14 countries. Klarna offers direct payments, pay after delivery options and installment plans in a smooth one-click purchase experience that lets consumers pay when and how they prefer to.",
     "url": "https://www.klarna.com"
