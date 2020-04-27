@@ -9,7 +9,7 @@ import { rhythm, scale } from './../utils/typography'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import 'prismjs/themes/prism-tomorrow.css'
+import './prism.css'
 
 export default class Template extends React.Component {
   render() {
@@ -29,10 +29,15 @@ export default class Template extends React.Component {
         )}
         {location.pathname !== rootPath && (
           <div>
-            <div style={{ borderTop: `${rhythm(0.2)} solid` }} />
+            <div
+              style={{
+                borderWidth: `${rhythm(0.3)}`,
+                borderTopStyle: `solid`,
+              }}
+            />
             <Container
               style={{
-                maxWidth: rhythm(24),
+                maxWidth: rhythm(22),
                 padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
               }}
             >

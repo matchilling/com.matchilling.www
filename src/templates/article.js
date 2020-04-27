@@ -8,6 +8,8 @@ import { rhythm, scale } from '../utils/typography'
 export default class ArticleTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    const tags =
+      post.frontmatter.tags != null ? post.frontmatter.tags.split(',') : []
     const readTime = (words, options) => {
       const defaults = Object.assign(
           {
@@ -34,23 +36,23 @@ export default class ArticleTemplate extends React.Component {
         <p
           style={{
             ...scale(-1 / 5),
+            color: 'rgba(0, 0, 0, 0.35)',
             display: 'block',
             marginBottom: rhythm(1),
             marginTop: rhythm(-0.5),
           }}
         >
-          {post.frontmatter.date}, {readTime(post.wordCount.words)}
+          {post.frontmatter.date} • {readTime(post.wordCount.words)}
+          {tags.length > 0 ? ` • ${tags.join(', ')}` : null}
           {post.frontmatter.hn_id && (
             <span>
-              <span>, </span>
+              <span> • </span>
               <a
                 target="_blank"
                 rel="nofollow"
-                href={`https://news.ycombinator.com/item?id=${
-                  post.frontmatter.hn_id
-                }`}
+                href={`https://news.ycombinator.com/item?id=${post.frontmatter.hn_id}`}
               >
-                comments on hackernews
+                comments
               </a>
             </span>
           )}
@@ -75,7 +77,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "DD MMMM, YYYY")
+        date(formatString: "DD MMMM YYYY")
         hn_id
         path
         tags

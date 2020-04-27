@@ -2,7 +2,7 @@
 date  : 2018-02-11T21:51:21.275Z
 hn_id : 16365895
 path  : /comparison-of-machine-learning-methods-in-email-spam-detection/
-tags  : classification algorithms, unsolicited email, spam
+tags  : Classification, Spam
 title : "Comparison of machine learning methods in email spam detection"
 ---
 

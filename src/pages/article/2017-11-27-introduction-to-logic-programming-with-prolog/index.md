@@ -2,7 +2,7 @@
 date  : 2017-11-27T02:57:06.422Z
 hn_id : 15850874
 path  : /introduction-to-logic-programming-with-prolog/
-tags  : programming language paradigms, prolog, logic programming
+tags  : Programming Language Paradigms, Prolog, Logic Programming
 title : Introduction to logic programming with Prolog
 ---
 

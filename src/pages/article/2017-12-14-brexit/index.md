@@ -2,7 +2,7 @@
 date  : 2017-12-14T01:09:17.289Z
 hn_id : 15920800
 path  : /brexit-call-for-collaboration/
-tags  : game, prolog, culture
+tags  : Prolog, Logic Programming
 title : "Brexit: call for collaboration"
 ---
 
