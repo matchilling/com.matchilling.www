@@ -28,6 +28,8 @@ export default class ArticleTemplate extends React.Component {
       { name: 'og:type', content: 'article' },
       { name: 'og:title', content: post.frontmatter.title },
       { name: 'og:description', content: post.frontmatter.description },
+      { name: 'twitter:label1', content: 'Reading time' },
+      { name: 'twitter:data1', content: readTime(post.wordCount.words) },
     ]
 
     const re = /\"(\/static.*?)\"/g
