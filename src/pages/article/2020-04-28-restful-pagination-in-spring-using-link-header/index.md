@@ -1,5 +1,5 @@
 ---
-date  : '2020-04-27T19:00:00.000Z'
+date  : '2020-04-28T19:00:00.000Z'
 title : 'RESTful pagination in Spring using Link header'
 path  : '/restful-pagination-in-spring-using-link-header/'
 tags  : 'Spring, How-to, REST'
@@ -12,7 +12,7 @@ Pagination is a mechanism for managing big result sets in any application. This 
 
 ## Quick Introduction
 
-Additionally, to increasing throughput and evolving your API design, paginating APIs can help with scaling. Quite often, APIs need to handle large datasets, and an API call might end up fetching thousands of items. Returning too many records can oppress the backend and even slow down clients that can't handle large datasets. For that purpose, it's crucial to paginate large result sets and split them into smaller chunks to minimise response times and make the response more comfortable to consume.
+Additionally, to increasing throughput and evolving your API design, paginating APIs can help with scaling. Quite often, APIs need to handle large datasets, and an API call might end up fetching thousands of items. Returning too many records can oppress the backend and even slow down clients that can't handle large datasets. For that purpose, it's crucial to paginate large result sets and split them into smaller chunks to minimise response times and to make them more comfortable to work with.
 
 Enough for the introduction part, let's get back to Spring.
 
@@ -20,9 +20,9 @@ Enough for the introduction part, let's get back to Spring.
 
 Don't get me wrong, [Spring HATEOAS](https://spring.io/projects/spring-hateoas) is an excellent tool and provides some nice APIs to ease creating REST representations that follow the HATEOAS principle. However, it certainly comes with some implementation overhead on the client- and server-side, or it sometimes just doesn't fit into your existing API design.
 
-My use case was an MVP which serialises and exposes the domain entities directly via a restful interface without using dedicated data transfer objects. Yes, a [recommended strategy](https://stackoverflow.com/questions/36174516/rest-api-dtos-or-not) is to use DTOs, but I usually tend to keep it simple at the beginning and only introduce this additional abstraction layer when necessary.
+My use case on which I will use as an example throughout this blog post was an MVP, which serialises and exposes the domain entities directly via a restful interface without using dedicated data transfer objects. Yes, I know, a [recommended strategy](https://stackoverflow.com/questions/36174516/rest-api-dtos-or-not) is to use DTOs. Still, I usually tend to keep things simple at the beginning and only introduce additional abstraction layers when they become necessary.
 
-## Example endpoint
+## Example REST endpoint
 
 Rather than just returning a simple list, I want my endpoint to support sorting, ordering and as the title says, pagination. Therefore, let's consider the following REST endpoint, which returns a paginated response of my domain entities by leveraging the [Pageable interface](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Pageable.html).
 
@@ -40,7 +40,7 @@ fun page(pageable: Pageable): Page<Currency> {
 
 ```
 
-By default, Spring serialises the PageImpl object which implements the Pageable interface as follows:
+By default, Spring serialises the `PageImpl` object which implements the `Pageable` interface as follows:
 
 ```json
 {
@@ -55,11 +55,13 @@ By default, Spring serialises the PageImpl object which implements the Pageable 
 }
 ```
 
-In comparison to a simple list, we can observe that the returned JSON structure contains additional fields derived from the PageImpl object such as pageable, sort, totalPages etc. and that our resource list is wrapped in the content property.
+In comparison to a simple list, we can observe that the returned JSON structure contains additional fields derived from the PageImpl object such as `pageable`, `sort`, `totalPages` etc. and that our resource list is wrapped in the content property.
 
-### Custom PageSerializer
+Most of the time, these additional properties are already known by the consumer on request build time, so I find it a bit redundant to include them in the response body again.  More importantly, I prefer to have just a resource, or a list of resources returned from the API. Hence, the page object is not part of the underlying domain and only being used for representational purposes. I don't think it should form part of the response. But that is just personal taste.
 
-Most of the time, these additional properties are already known by the consumer when they build the request, so I find it a bit redundant to include them in the response body again.  I prefer to have just a resource, or a list of resources returned from the API, and hence the page object is not part of the domain I don't think it should form part of the response. But that is just personal taste. However, to change the serialisation of the object PageImpl, we need to create a custom PageSerializer class like the one below:
+## Custom PageSerializer
+
+However, to change the serialisation of the object `PageImpl`, we need to create a custom `PageSerializer` class like the one below:
 
 ```kotlin
 @JsonComponent
@@ -75,8 +77,9 @@ class PageSerializer : JsonSerializer<PageImpl<*>>() {
     }
 }
 ```
+The above code is straightforward and only uses the passed-in JsonGenerator from Jackson's [JsonSerializer interface](https://fasterxml.github.io/jackson-databind/javadoc/2.7/com/fasterxml/jackson/databind/JsonSerializer.html) to dump the page content. Also note, that we have annotated the class with Spring's [JsonComponent annotation](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/jackson/JsonComponent.html) to automatically register our `PageSerializer` with Jackson.
 
-With the custom PageSerializer in place, our new response looks like this now:
+With the custom `PageSerializer` in place, our new response looks like this now:
 
 ```json
 [{
@@ -93,17 +96,19 @@ As an alternative to including pagination related information in the body, we ar
 Link: < uri-reference >; param1=value1; param2="value2"
 ```
 
-In our currency use case, we would like to let the API consumer know where to find the next and the last page on the server. An example header should look something like this:
+In our currency use case, we would like to let the API consumer know where to find the next and the last page on the server. An example header, therefore, should look something like this:
 
 ```textfile
 Link: <http://localhost:8080/currency?page=2&size=25>; rel="next",<http://localhost:8080/currency?page=4&size=25>; rel="last"
 ```
 
+So let's take a look at how we can implement this header in our Spring application.
+
 ## Custom PaginatedResponseAdvice
 
-Fortunately, Spring provides us with the handy ResponseBodyAdvice interface, which allows us to manipulate the response before it's being sent to the client.
+Fortunately, Spring provides us with the handy [ResponseBodyAdvice interface](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/servlet/mvc/method/annotation/ResponseBodyAdvice.html), which allows us to customise the response after the execution of a controller method but before the body is written with an [HttpMessageConverter](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/http/converter/HttpMessageConverter.html), in our case by the new `PageSerializer`.
 
-We implement the ResponseAdvice interface by overriding the `supports` and `beforeBodyWrite` method which gives us access to the response body, the PageImpl instance in our case, and the ServerHttpResponse object to which we want to append our Link header.
+We implement the `ResponseBodyAdvice` interface by overriding the `supports` and `beforeBodyWrite` method which gives us access to the response body, the `PageImpl` instance in our case, and the `ServerHttpResponse` object to which we want to append our Link header.
 
 Let's start implementing the `supports` method:
 
@@ -120,9 +125,9 @@ class PaginatedResponseAdvice<T> : ResponseBodyAdvice<T> {
 }
 ```
 
-As we can see in the above code, the only pupose of the `supports` method is to indicate if the component supports the given controller method return type. Note as well, that we are using the `RestControllerAdvice` annotation on our class to intercept the response before sending it to back the client.
+As we can see in the above code, the sole pupose of the `supports` method is to indicate if the component supports the given controller method return type or not. Note as well, that we are using the `RestControllerAdvice` annotation on our class to intercept the response before sending it to back the client.
 
-Let's move on to the `beforeBodyWrite` method:
+Next, we move on to the `beforeBodyWrite` method:
 
 ```kotlin
 @RestControllerAdvice
@@ -250,7 +255,7 @@ class PaginatedResponseAdvice<T>(
 }
 ```
 
-This is actually the boring bit, as nothing exciting is going on here. We just define two [extension functions](https://kotlinlang.org/docs/reference/extensions.html) on the PageImpl and UriComponentsBuilder classes to idiomatically create the required link relations, join them together with a comma and that's it!
+This is actually the boring bit, as nothing exciting is going on here. We just define two [extension functions](https://kotlinlang.org/docs/reference/extensions.html) on the `PageImpl` and `UriComponentsBuilder` classes to idiomatically create the required link relations, join them together with a comma and that's it!
 
 :clap: :clap: :clap:
 
@@ -260,8 +265,8 @@ In this tutorial, we learned how to implement RESTful pagination in Spring, disc
 
 Finally, here are some **best practices** (which I may update over time) one should keep in mind when designing pagination for an API:
 - Always set reasonable default and maximum values for the page size.
-- This holds for sorting as well. Sorting the response such that newer items are returned first and older ones later, is often more performant. This way, clients don't need to paginate through to the end if they are interested only in newer items.
+- The above holds for sorting as well. Sorting the response such that newer items are returned first and older ones later, is often more performant. This way, clients don't need to paginate through to the end if they are interested only in newer items.
 - If your API does not support pagination today, introduce it later in a way that maintains backward compatibility (hint: the previously implementation follows that principle).
 - Return the next page URL pointing to the subsequent page of results. By encouraging clients to fetch the next page URL, over time, you can change your pagination strategy without breaking clients.
 
-*The implementation of the shown examples and code snippets can be found on [GitHub](https://gist.github.com/matchilling/07ba65800a3b0770b7a52d0d868d0f0b).*
+*I hope you find this tutorial useful. The implementation of the shown examples and code snippets can be found on [GitHub](https://gist.github.com/matchilling/07ba65800a3b0770b7a52d0d868d0f0b).*
