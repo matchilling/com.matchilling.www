@@ -1,28 +1,28 @@
 {
   "assetsByChunkName": {
     "path---restful-pagination-in-spring-using-link-header": [
-      "path---restful-pagination-in-spring-using-link-header-5c1de82d6247a1530282.js",
-      "path---restful-pagination-in-spring-using-link-header-5c1de82d6247a1530282.js.map"
+      "path---restful-pagination-in-spring-using-link-header-282513a7f7771865f630.js",
+      "path---restful-pagination-in-spring-using-link-header-282513a7f7771865f630.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-f43ccf336d5fb008f152.js",
       "component---src-pages-index-js-f43ccf336d5fb008f152.js.map"
     ],
     "path---blog": [
-      "path---blog-d4544c69ad6f6305ed89.js",
-      "path---blog-d4544c69ad6f6305ed89.js.map"
+      "path---blog-60390bc7137303ed577f.js",
+      "path---blog-60390bc7137303ed577f.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "component---src-pages-contact-js": [
-      "component---src-pages-contact-js-f7d7c8f24ba630b067a6.js",
-      "component---src-pages-contact-js-f7d7c8f24ba630b067a6.js.map"
+      "component---src-pages-contact-js-c7126acc4f9cf71087ce.js",
+      "component---src-pages-contact-js-c7126acc4f9cf71087ce.js.map"
     ],
     "path---brexit-call-for-collaboration": [
-      "path---brexit-call-for-collaboration-caea8095ebc4ceafbb1d.js",
-      "path---brexit-call-for-collaboration-caea8095ebc4ceafbb1d.js.map"
+      "path---brexit-call-for-collaboration-1f87a733b74dc6685bd2.js",
+      "path---brexit-call-for-collaboration-1f87a733b74dc6685bd2.js.map"
     ],
     "path---project": [
       "path---project-a0e39f21c11f6a62c5ab.js",
@@ -40,17 +40,13 @@
       "component---src-layouts-index-js-0ec9dc28d5483cb3e969.js",
       "component---src-layouts-index-js-0ec9dc28d5483cb3e969.js.map"
     ],
-    "path---introduction-to-logic-programming-with-prolog": [
-      "path---introduction-to-logic-programming-with-prolog-410705a4341c30ca0046.js",
-      "path---introduction-to-logic-programming-with-prolog-410705a4341c30ca0046.js.map"
-    ],
     "path---storing-security-sensitive-data-using-aws-kms-and-openssl": [
-      "path---storing-security-sensitive-data-using-aws-kms-and-openssl-a58349fa6b46748d6d91.js",
-      "path---storing-security-sensitive-data-using-aws-kms-and-openssl-a58349fa6b46748d6d91.js.map"
+      "path---storing-security-sensitive-data-using-aws-kms-and-openssl-a91406712b942ca31871.js",
+      "path---storing-security-sensitive-data-using-aws-kms-and-openssl-a91406712b942ca31871.js.map"
     ],
     "component---src-templates-article-js": [
-      "component---src-templates-article-js-06fedab6dac5a6607242.js",
-      "component---src-templates-article-js-06fedab6dac5a6607242.js.map"
+      "component---src-templates-article-js-d6b4ee6ce2ecfa269950.js",
+      "component---src-templates-article-js-d6b4ee6ce2ecfa269950.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -65,8 +61,8 @@
       "path---contact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---comparison-of-machine-learning-methods-in-email-spam-detection": [
-      "path---comparison-of-machine-learning-methods-in-email-spam-detection-d31932983a666daa598a.js",
-      "path---comparison-of-machine-learning-methods-in-email-spam-detection-d31932983a666daa598a.js.map"
+      "path---comparison-of-machine-learning-methods-in-email-spam-detection-38b9d72b3f418111c92d.js",
+      "path---comparison-of-machine-learning-methods-in-email-spam-detection-38b9d72b3f418111c92d.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
@@ -77,14 +73,14 @@
       "component---src-pages-blog-js-5d9a5447772b9a8feeb5.js.map"
     ],
     "app": [
-      "app-46ddf4697226a0e2740b.js",
+      "app-d1dde8a820fd4bb0d12d.js",
       "build-js-styles.css",
-      "app-46ddf4697226a0e2740b.js.map",
+      "app-d1dde8a820fd4bb0d12d.js.map",
       "build-js-styles.css.map"
     ],
     "path---new-beginnings": [
-      "path---new-beginnings-995a315ae5ea383108a6.js",
-      "path---new-beginnings-995a315ae5ea383108a6.js.map"
+      "path---new-beginnings-d0a18ed8ca1767ae1f4f.js",
+      "path---new-beginnings-d0a18ed8ca1767ae1f4f.js.map"
     ]
   }
 }
