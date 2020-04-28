@@ -21,7 +21,7 @@ Enough for the introduction part, let's get back to Spring.
 
 Don't get me wrong, [Spring HATEOAS](https://spring.io/projects/spring-hateoas) is an excellent tool and provides some nice APIs to ease creating REST representations that follow the HATEOAS principle. However, it certainly comes with some implementation overhead on the client- and server-side, or it sometimes just doesn't fit into your existing API design.
 
-My use case on which I will use as an example throughout this blog post was an MVP, which serialises and exposes the domain entities directly via a restful interface without using dedicated data transfer objects. Yes, I know, a [recommended strategy](https://stackoverflow.com/questions/36174516/rest-api-dtos-or-not) is to use DTOs. Still, I usually tend to keep things simple at the beginning and only introduce additional abstraction layers when they become necessary.
+My use case which I will use as an example throughout this blog post was an MVP, which serialises and exposes the domain entities directly via a restful interface without using dedicated data transfer objects. Yes, I know, a [recommended strategy](https://stackoverflow.com/questions/36174516/rest-api-dtos-or-not) is to use DTOs. Still, I usually tend to keep things simple at the beginning and only introduce additional abstraction layers when they become necessary.
 
 ## Example REST endpoint
 
