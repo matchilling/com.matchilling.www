@@ -1,9 +1,10 @@
 ---
-date  : 2017-11-27T02:57:06.422Z
-hn_id : 15850874
-path  : /introduction-to-logic-programming-with-prolog/
-tags  : Programming Language Paradigms, Prolog, Logic Programming
-title : Introduction to logic programming with Prolog
+date        : 2017-11-27T02:57:06.422Z
+hn_id       : 15850874
+path        : /introduction-to-logic-programming-with-prolog/
+tags        : Programming Language Paradigms, Prolog, Logic Programming
+title       : Introduction to logic programming with Prolog
+description : 'In this post, I am going to provide a short introduction to the language and its essential features. After reading the post, you should be able to write simple programs in Prolog and understand the language's underlying primary principles.'
 ---
 
 ![The Great Wave off Kanagawa by Katsushika Hokusai](./the_great_wave_by_hokusai.jpg 'The Great Wave off Kanagawa by Katsushika Hokusai')

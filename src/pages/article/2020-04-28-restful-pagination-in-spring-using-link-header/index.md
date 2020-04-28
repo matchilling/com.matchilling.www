@@ -1,8 +1,9 @@
 ---
-date  : '2020-04-28T19:00:00.000Z'
-title : 'RESTful pagination in Spring using Link header'
-path  : '/restful-pagination-in-spring-using-link-header/'
-tags  : 'Spring, How-to, REST'
+date        : '2020-04-28T19:00:00.000Z'
+title       : 'RESTful pagination in Spring using Link header'
+description : 'Pagination is a mechanism for managing big result sets in any application. This quick tutorial focuses on implementing pagination in a RESTful API, using Spring MVC and Spring Data without the help of the Spring HATEOAS project.'
+path        : '/restful-pagination-in-spring-using-link-header/'
+tags        : 'Spring, How-to, REST'
 ---
 
 Pagination is a mechanism for managing big result sets in any application. This quick tutorial focuses on implementing pagination in a RESTful API, using Spring MVC :leaves: and Spring Data without the help of the Spring HATEOAS project.

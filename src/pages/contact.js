@@ -12,7 +12,16 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <Helmet title="Contact" />
+        <Helmet
+          title="Contact"
+          meta={[
+            {
+              name: 'description',
+              content:
+                '99% of the time my brain is thinking blah, meh, why, huh, WTF, food and programming. The other 1% I’m usually asleep.',
+            },
+          ]}
+        />
         <h1>Contact</h1>
         <Bio />
         <p>... or drop me a line at {profile.contact.email}</p>

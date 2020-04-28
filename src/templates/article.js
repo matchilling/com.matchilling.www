@@ -22,9 +22,26 @@ export default class ArticleTemplate extends React.Component {
       return `${Math.ceil(minutes.toFixed(2))} min read`
     }
 
+    const meta = [
+      { name: 'description', content: post.frontmatter.description },
+      { name: 'og:url', content: post.frontmatter.path },
+      { name: 'og:type', content: 'article' },
+      { name: 'og:title', content: post.frontmatter.title },
+      { name: 'og:description', content: post.frontmatter.description },
+    ]
+
+    const re = /\"(\/static.*?)\"/g
+    let firstImageUrl = post.html.match(re)
+    if (firstImageUrl) {
+      meta.push({
+        name: 'og:image',
+        content: firstImageUrl[0].replace(/['"]+/g, ''),
+      })
+    }
+
     return (
       <article>
-        <Helmet title={`${post.frontmatter.title}`} />
+        <Helmet title={post.frontmatter.title} meta={meta} />
         <h1>
           <Link
             style={{ color: 'hsla(0,0%,0%,0.9)', boxShadow: 'none' }}
@@ -82,6 +99,7 @@ export const pageQuery = graphql`
         path
         tags
         title
+        description
       }
       wordCount {
         words

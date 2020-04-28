@@ -1,9 +1,10 @@
 ---
-date  : 2017-12-24T17:50:44.008Z
-hn_id : 16052646
-path  : /storing-security-sensitive-data-using-aws-kms-and-openssl/
-tags  : AWS, AWS KMS, How-to, Key Management, OpenSSL
-title : Painlessly storing security sensitive data using AWS KMS and OpenSSL
+date        : 2017-12-24T17:50:44.008Z
+hn_id       : 16052646
+path        : /storing-security-sensitive-data-using-aws-kms-and-openssl/
+tags        : AWS, AWS KMS, How-to, Key Management, OpenSSL
+title       : Painlessly storing security sensitive data using AWS KMS and OpenSSL
+description : 'In this post, I am going to introduce a method using AWS KMS, envelope encryption and OpenSSL as an alternative for securing private data in your public GitHub/ Bitbucket repositories. You will learn how to use AWS KMS and how to implement your own encryption mechanism.'
 ---
 
 In this post, I am going to introduce a method using AWS KMS, envelope encryption and OpenSSL as an alternative for securing private data in your public GitHub/ Bitbucket repositories. You will learn how to use AWS KMS and how to implement your own encryption mechanism. Finally, I have created a repository with an example implementation written in shell ~ check out the [aws-kms-boilerplate repository on GitHub](https://github.com/matchilling/aws-kms-boilerplate) and have a look at the `encrypt` and `decrypt` shell scripts in the `bin/` directory.

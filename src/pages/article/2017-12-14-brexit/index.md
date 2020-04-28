@@ -1,9 +1,10 @@
 ---
-date  : 2017-12-14T01:09:17.289Z
-hn_id : 15920800
-path  : /brexit-call-for-collaboration/
-tags  : Prolog, Logic Programming
-title : "Brexit: call for collaboration"
+date        : 2017-12-14T01:09:17.289Z
+hn_id       : 15920800
+path        : /brexit-call-for-collaboration/
+tags        : Prolog, Logic Programming
+title       : "Brexit: call for collaboration"
+description : 'If you are keen to learn Prolog, refresh your logic programming skills or just like to be part of the project as a kind of recreational activity, then you are warmly welcomed to contribute to this project!'
 ---
 
 ![BREXIT - A !serious adventure for the Ununited Kingdom](./brexit-a-!serious-adventure-for-the-ununited-kingdom.gif)
