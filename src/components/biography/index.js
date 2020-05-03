@@ -19,8 +19,7 @@ export default class Biography extends React.Component {
           }}
         />
         <p>
-          99% of the time my brain is thinking blah, meh, why, huh, WTF, food
-          and programming. The other 1% I’m usually asleep. You can find me on{' '}
+          I create <a href="https://jugendstil.io/">business impact through code</a> and help organisations become more effective in delivering solutions to their customer's problems. You can find me on{' '}
           <a href={profile.contact.twitter} target="_blank">
             Twitter
           </a>
