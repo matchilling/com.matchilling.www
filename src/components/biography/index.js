@@ -20,21 +20,26 @@ export default class Biography extends React.Component {
         />
         <p>
           99% of the time my brain is thinking blah, meh, why, huh, WTF, food
-          and programming. The other 1% I’m usually asleep. You can find me{' '}
+          and programming. The other 1% I’m usually asleep. You can find me on{' '}
           <a href={profile.contact.twitter} target="_blank">
-            here
+            Twitter
           </a>
           ,{' '}
           <a href={profile.contact.linkedin} target="_blank">
-            here
+            LinkedIn
           </a>
           ,{' '}
           <a href={profile.contact.github} target="_blank">
-            here
-          </a>{' '}
+            GitHub
+          </a>
+          ,{' '}
+          <a href={profile.contact.reddit} target="_blank">
+            Reddit
+          </a>
+          ,{' '}
           and{' '}
           <a href={profile.contact.lastfm} target="_blank">
-            there
+            Last.fm
           </a>
           .
         </p>
