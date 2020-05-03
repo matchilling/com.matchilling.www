@@ -31,7 +31,6 @@ export default class ArticleTemplate extends React.Component {
       { name: 'twitter:site', content: '@matchilling' },
       { name: 'twitter:creator', content: '@matchilling' },
       { name: 'twitter:description', content: post.frontmatter.description },
-      { name: 'twitter:image', content: post.frontmatter.description },
       { name: 'twitter:label1', content: 'Reading time' },
       { name: 'twitter:data1', content: readTime(post.wordCount.words) },
     ]
