@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
 
 import Fullscreen from './../components/fullscreen/'
@@ -49,17 +48,17 @@ export default class Template extends React.Component {
                   marginBottom: rhythm(-1),
                 }}
               >
-                <Link
+                <a
                   style={{
                     boxShadow: 'none',
                     color: 'inherit',
                     marginRight: rhythm(0.2),
                     textDecoration: 'none',
                   }}
-                  to={'/'}
+                  href={'/'}
                 >
                   Home
-                </Link>
+                </a>
                 {'/contact/' === location.pathname && (
                   <span>
                     <span
@@ -105,16 +104,16 @@ export default class Template extends React.Component {
                     >
                       /
                     </span>
-                    <Link
+                    <a
                       style={{
                         boxShadow: 'none',
                         color: 'inherit',
                         textDecoration: 'none',
                       }}
-                      to={'/blog/'}
+                      href={'/blog/'}
                     >
                       Blog
-                    </Link>
+                    </a>
                   </span>
                 )}
               </h3>

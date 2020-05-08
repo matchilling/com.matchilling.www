@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
 import { rhythm } from './../../utils/typography'
 
 import background from './background.jpg'
@@ -62,7 +61,7 @@ export default class Fullscreen extends Component {
                   }}
                   key={element.path}
                 >
-                  <Link
+                  <a
                     style={{
                       color: 'white',
                       boxShadow: 'none',
@@ -71,11 +70,11 @@ export default class Fullscreen extends Component {
                       fontSize: rhythm(0.5),
                       textTransform: 'uppercase',
                     }}
-                    to={element.path}
+                    href={element.path}
                     title={element.title}
                   >
                     {element.title}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
