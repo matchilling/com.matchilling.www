@@ -10,6 +10,7 @@ import 'typeface-montserrat'
 import 'typeface-merriweather'
 
 import './prism.css'
+import './util.css'
 
 export default class Template extends React.Component {
   render() {

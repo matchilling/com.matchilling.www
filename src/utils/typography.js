@@ -23,6 +23,22 @@ theme.overrideThemeStyles = () => ({
   'article .gatsby-resp-image-wrapper + em a': {
     color: 'rgba(0, 0, 0, 0.35)',
   },
+  '.article-preview a': {
+    color: 'hsla(0, 0%, 0%, 0.9) !important',
+    backgroundImage: 'none',
+    textDecoration: 'none',
+    boxShadow: 'none',
+  },
+  '.article-preview a:hover': {
+    boxShadow: 'none',
+    color: 'hsla(0, 0%, 0%, 0.9)',
+    backgroundImage: 'none',
+    textDecoration: 'none',
+  },
+  '.article-preview': {
+    boxShadow: 'none',
+    color: 'hsla(0, 0%, 0%, 0.9) !important',
+  },
   a: {
     color: '#d1066e',
   },

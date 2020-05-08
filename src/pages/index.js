@@ -19,8 +19,6 @@ export default class Index extends React.Component {
       { name: 'twitter:image', content: profilePicture },
     ]
 
-    return (
-      <Helmet title={title} meta={meta} />
-    )
+    return <Helmet title={title} meta={meta} />
   }
 }

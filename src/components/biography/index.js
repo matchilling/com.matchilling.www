@@ -19,7 +19,10 @@ export default class Biography extends React.Component {
           }}
         />
         <p>
-          I create <a href="https://jugendstil.io/">business impact through code</a> and help organisations become more effective in delivering solutions to their customer's problems. You can find me on{' '}
+          I create{' '}
+          <a href="https://jugendstil.io/">business impact through code</a> and
+          help organisations become more effective in delivering solutions to
+          their customer's problems. You can find me on{' '}
           <a href={profile.contact.twitter} target="_blank">
             Twitter
           </a>
@@ -35,8 +38,7 @@ export default class Biography extends React.Component {
           <a href={profile.contact.reddit} target="_blank">
             Reddit
           </a>
-          ,{' '}
-          and{' '}
+          , and{' '}
           <a href={profile.contact.lastfm} target="_blank">
             Last.fm
           </a>

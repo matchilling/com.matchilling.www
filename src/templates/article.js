@@ -32,13 +32,19 @@ export default class ArticleTemplate extends React.Component {
       { name: 'twitter:creator', content: '@matchilling' },
       { name: 'twitter:description', content: post.frontmatter.description },
       { name: 'twitter:label_read_time', content: 'Reading time' },
-      { name: 'twitter:data_read_time', content: readTime(post.wordCount.words) },
+      {
+        name: 'twitter:data_read_time',
+        content: readTime(post.wordCount.words),
+      },
     ]
 
     const re = /\"(\/static.*?)\"/g
     let firstImageUrl = post.html.match(re)
     if (firstImageUrl) {
-      const url = `https://www.matchilling.com${firstImageUrl[0].replace(/['"]+/g, '')}`
+      const url = `https://www.matchilling.com${firstImageUrl[0].replace(
+        /['"]+/g,
+        '',
+      )}`
       meta.push({ name: 'og:image', content: url })
       meta.push({ name: 'twitter:image', content: url })
     }

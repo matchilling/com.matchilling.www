@@ -1,0 +1,24 @@
+.visible-lg, .visible-md, .visible-sm, .visible-xs {
+    display: none!important;
+}
+
+@media(max-width:768px){
+  .visible-xs {
+      display: block!important;
+  }
+}
+@media(min-width:768px){
+  .visible-sm {
+      display: block!important;
+  }
+}
+@media(min-width:992px){
+  .visible-md {
+      display: block!important;
+  }
+}
+@media(min-width:1200px){
+  .visible-lg {
+      display: block!important;
+  }
+}

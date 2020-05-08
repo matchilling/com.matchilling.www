@@ -2,11 +2,11 @@
  * prism.js Github theme based on GitHub's theme.
  * @author Sam Clarke
  */
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   color: #333;
   background: none;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -25,8 +25,8 @@ pre[class*="language-"] {
 }
 
 /* Code blocks */
-pre[class*="language-"] {
-  padding: .8em;
+pre[class*='language-'] {
+  padding: 0.8em;
   overflow: auto;
   border: 1px solid #ddd;
   border-radius: 3px;
@@ -34,9 +34,9 @@ pre[class*="language-"] {
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
+:not(pre) > code[class*='language-'] {
+  padding: 0.1em;
+  border-radius: 0.3em;
   white-space: normal;
   background: #f5f5f5;
 }
@@ -133,7 +133,6 @@ pre[class*="language-"] {
 .token.italic {
   font-style: italic;
 }
-
 
 /* JSON */
 .language-json .token.property {
