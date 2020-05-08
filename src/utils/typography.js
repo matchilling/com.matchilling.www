@@ -63,6 +63,11 @@ theme.overrideThemeStyles = () => ({
     fontWeight: '600',
     marginTop: '2.1rem !important',
   },
+  'article iframe': {
+    width: '100%',
+    minHeight: '320px',
+    border: 'none',
+  },
   li: {
     marginBottom: 'calc(1rem / 2)',
   },

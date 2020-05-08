@@ -41,7 +41,6 @@ export default class Fullscreen extends Component {
           style={{
             display: 'inline-block',
             position: 'absolute',
-            textAlign: 'center',
             width: '300px',
             textAlign: 'center',
             marginTop: '-150px',

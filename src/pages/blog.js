@@ -149,13 +149,15 @@ export default class Blog extends React.Component {
                 )}`
               : undefined
 
-            if (index < 2) {
+            if (index < 3) {
               return (
                 <div key={post.node.frontmatter.path}>
-                  <span className="visible-md">
+                  <span className="hidden-xs hidden-sm visible-md visible-lg">
                     {top(post, index % 2 === 0)}
                   </span>
-                  <span className="visible-xs">{standard(post)}</span>
+                  <span className="visible-xs visible-sm hidden-md hidden-lg">
+                    {standard(post)}
+                  </span>
                 </div>
               )
             }
