@@ -5,7 +5,7 @@ module.exports = {
     siteUrl: `https://www.matchilling.com`,
   },
   plugins: [
-    'gatsby-plugin-catch-links',
+    // 'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     // The following sets up the Jekyll pattern of having a
     // "pages" directory for Markdown files and a "data" directory
@@ -98,7 +98,7 @@ module.exports = {
         trackingId: `UA-75319994-1`,
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-typography",

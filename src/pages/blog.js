@@ -22,9 +22,7 @@ const standard = post => {
           marginTop: rhythm(2),
         }}
       >
-        <Link style={{ boxShadow: 'none' }} to={post.node.frontmatter.path}>
-          {post.node.frontmatter.title}
-        </Link>
+        {post.node.frontmatter.title}
       </h2>
       <small>{post.node.frontmatter.date}</small>
       <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
@@ -74,9 +72,7 @@ const top = (post, imgAlignLeft) => {
             marginTop: 0,
           }}
         >
-          <Link style={{ boxShadow: 'none' }} to={post.node.frontmatter.path}>
-            {post.node.frontmatter.title}
-          </Link>
+          {post.node.frontmatter.title}
         </h2>
         <small>{post.node.frontmatter.date}</small>
         <p
@@ -155,7 +151,7 @@ export default class Blog extends React.Component {
 
             if (index < 2) {
               return (
-                <div>
+                <div key={post.node.frontmatter.path}>
                   <span className="visible-md">
                     {top(post, index % 2 === 0)}
                   </span>
