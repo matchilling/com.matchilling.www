@@ -24,7 +24,9 @@ const standard = post => {
       >
         {post.node.frontmatter.title}
       </h2>
-      <small>{post.node.frontmatter.date}</small>
+      <small style={{color: 'rgba(0, 0, 0, 0.35)'}}>
+        {post.node.frontmatter.date}
+      </small>
       <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
     </a>
   )
@@ -36,6 +38,18 @@ const top = (post, imgAlignLeft) => {
   const url = firstImageUrl
     ? `https://www.matchilling.com${firstImageUrl[0].replace(/['"]+/g, '')}`
     : undefined
+  const tags = post.node.frontmatter.tags != null ? post.node.frontmatter.tags.split(',') : []
+  const readTime = (words, options) => {
+    const defaults = Object.assign(
+        {
+          wordsPerMinute: 225,
+        },
+        options,
+      ),
+      minutes = words / defaults.wordsPerMinute
+
+    return `${Math.ceil(minutes.toFixed(2))} min read`
+  }
 
   const img = url => (
     <div>
@@ -74,7 +88,10 @@ const top = (post, imgAlignLeft) => {
         >
           {post.node.frontmatter.title}
         </h2>
-        <small>{post.node.frontmatter.date}</small>
+        <small style={{color: 'rgba(0, 0, 0, 0.35)'}}>
+          {post.node.frontmatter.date} • {readTime(post.node.wordCount.words)}
+          {tags.length > 0 ? ` • ${tags.join(', ')}` : null}
+        </small>
         <p
           style={{
             fontSize: `90%`,
@@ -191,6 +208,9 @@ export const pageQuery = graphql`
             path
             tags
             title
+          }
+          wordCount {
+            words
           }
         }
       }
