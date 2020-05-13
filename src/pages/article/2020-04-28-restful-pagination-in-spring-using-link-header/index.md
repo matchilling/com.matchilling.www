@@ -267,7 +267,7 @@ In this tutorial, we learned how to implement RESTful pagination in Spring, disc
 Finally, here are some **best practices** (which I may update over time) one should keep in mind when designing pagination for an API:
 - Always set reasonable default and maximum values for the page size.
 - The above holds for sorting as well. Sorting the response such that newer items are returned first and older ones later, is often more performant. This way, clients don't need to paginate through to the end if they are interested only in newer items.
-- If your API does not support pagination today, introduce it later in a way that maintains backward compatibility (hint: the previously implementation follows that principle).
+- If your API does not support pagination today, introduce it later in a way that maintains backward compatibility (hint: the implementation shown above follows that principle).
 - Return the next page URL pointing to the subsequent page of results. By encouraging clients to fetch the next page URL, over time, you can change your pagination strategy without breaking clients.
 
 *I hope you find this tutorial useful. The implementation of the shown examples and code snippets can be found on [GitHub](https://gist.github.com/matchilling/07ba65800a3b0770b7a52d0d868d0f0b).*
