@@ -1,5 +1,10 @@
 [
   {
+    "name": "GasClic",
+    "description": "GasClic is a personal project focused on helping drivers quickly find and compare fuel prices across multiple countries through a fast, modern, and map-driven experience.\n\nThe platform aggregates fuel station and pricing data to provide real-time insights for gasoline, diesel, and alternative fuels, allowing users to discover the cheapest nearby stations, plan trips more efficiently, and save money on fuel costs.\n\nBuilt with a strong emphasis on performance, usability, and clean design, GasClic combines interactive mapping technologies with custom dark-themed cartography inspired by modern navigation apps. The project also explores geospatial data visualization, large-scale map rendering, localization, and multi-country data integration.",
+    "url": "https://www.gasclic.com"
+  },
+  {
     "name": "Sad Trombone for iOS",
     "description": "Someone in the house tell a bad joke? Want to annoy your partner?\n\nHit them with a perfectly timed sad trombone sound effect! You know the one, Wah Wah Wah Wah! Just like in the cartoons and movies!\n\nSad Trombone is a one trick pony. Perfect for every occasion.",
     "url": "https://www.sadtrombone.fun/"
