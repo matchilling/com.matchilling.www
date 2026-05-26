@@ -1,0 +1,90 @@
+{
+  "assetsByChunkName": {
+    "path---restful-pagination-in-spring-using-link-header": [
+      "path---restful-pagination-in-spring-using-link-header-ad533780d359681ebe65.js",
+      "path---restful-pagination-in-spring-using-link-header-ad533780d359681ebe65.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-68c5e978e0d4f728ef44.js",
+      "component---src-pages-index-js-68c5e978e0d4f728ef44.js.map"
+    ],
+    "path---blog": [
+      "path---blog-e0e24152c83b1ff6bd3f.js",
+      "path---blog-e0e24152c83b1ff6bd3f.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-a34f68c3dc79435f7bee.js",
+      "component---src-pages-contact-js-a34f68c3dc79435f7bee.js.map"
+    ],
+    "path---brexit-call-for-collaboration": [
+      "path---brexit-call-for-collaboration-1c4ebbc417883dce54de.js",
+      "path---brexit-call-for-collaboration-1c4ebbc417883dce54de.js.map"
+    ],
+    "path---project": [
+      "path---project-a0e39f21c11f6a62c5ab.js",
+      "path---project-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-project-js": [
+      "component---src-pages-project-js-fcefbe98aa91ce2a8084.js",
+      "component---src-pages-project-js-fcefbe98aa91ce2a8084.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-9311e12db28309f6a9fe.js",
+      "component---src-layouts-index-js-9311e12db28309f6a9fe.js.map"
+    ],
+    "path---introduction-to-logic-programming-with-prolog": [
+      "path---introduction-to-logic-programming-with-prolog-5b81e1286a7a12b71b09.js",
+      "path---introduction-to-logic-programming-with-prolog-5b81e1286a7a12b71b09.js.map"
+    ],
+    "path---storing-security-sensitive-data-using-aws-kms-and-openssl": [
+      "path---storing-security-sensitive-data-using-aws-kms-and-openssl-82d409ac7f859918c948.js",
+      "path---storing-security-sensitive-data-using-aws-kms-and-openssl-82d409ac7f859918c948.js.map"
+    ],
+    "component---src-templates-article-js": [
+      "component---src-templates-article-js-46c727ccfee5a0821195.js",
+      "component---src-templates-article-js-46c727ccfee5a0821195.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "commons": [
+      "commons-96301cbf542a3ed811a4.js",
+      "commons-96301cbf542a3ed811a4.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---le-dernier-retro": [
+      "path---le-dernier-retro-69cea01317aeaae05147.js",
+      "path---le-dernier-retro-69cea01317aeaae05147.js.map"
+    ],
+    "path---comparison-of-machine-learning-methods-in-email-spam-detection": [
+      "path---comparison-of-machine-learning-methods-in-email-spam-detection-834893c3fbddb3db5edf.js",
+      "path---comparison-of-machine-learning-methods-in-email-spam-detection-834893c3fbddb3db5edf.js.map"
+    ],
+    "component---src-pages-blog-js": [
+      "component---src-pages-blog-js-4d296d280c43303ce3cd.js",
+      "component---src-pages-blog-js-4d296d280c43303ce3cd.js.map"
+    ],
+    "path---setting-auto-generated-ids-manually-in-hibernate": [
+      "path---setting-auto-generated-ids-manually-in-hibernate-4a5749a6ec4dd415cb35.js",
+      "path---setting-auto-generated-ids-manually-in-hibernate-4a5749a6ec4dd415cb35.js.map"
+    ],
+    "app": [
+      "app-713b2d7f32d6d26ab1a3.js",
+      "build-js-styles.css",
+      "app-713b2d7f32d6d26ab1a3.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---new-beginnings": [
+      "path---new-beginnings-57d980bda371c21d6813.js",
+      "path---new-beginnings-57d980bda371c21d6813.js.map"
+    ]
+  }
+}
